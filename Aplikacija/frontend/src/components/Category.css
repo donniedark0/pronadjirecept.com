@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+.bat {
+  height: 30px;
+  width: 30px;
+}
+
+.catStyle {
+  margin: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  color: #3f3d3d;
+  width: 400px;
+  height: 70vh;
+  overflow: auto;
+  /*position: absolute;*/
+  border: 2px solid black;
+
+}
+
+.catTitle {
+  margin-top: 10px;
+  background-color: rgb(211, 211, 211);
+  text-align: center;
+  justify-content: center;
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  /*width: 500px;*/
+}
+
+.categories {
+  
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.categoryName {
+  text-shadow: 1px 1px 1px #f9cd8a,
+              1px 2px 1px #f9cd8a,
+              1px 2px 1px #f9cd8a,
+              1px 2px 1px #f9cd8a,
+              1px 3px 2px #f9cd8a,
+              1px 3px 2px #f9cd8a,
+              1px 5px 5px #000;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.ingredients {
+  font-size: 25px;
+  margin: 5px;
+  z-index: 3;
+}
+
+.dropdown {
+  background: linear-gradient(
+    90deg,
+    hsl(46, 32%, 92%) 0%,
+    rgb(252, 167, 63) 100%
+  );
+  margin: 10px;
+}
+
+.contentt{
+    height: auto;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    margin-top: 90px;
+    margin-bottom: 0;
+    flex-direction: row;
+    position: relative;
+    display: flex;
+    
+    /*border: 5px solid rgb(88, 252, 63);*/
+}
+
+.categoryBar{
+    left: 0;
+    margin-bottom: 90px;
+    width: 525px;
+    text-align: center;
+    position: relative;
+   
+}
+
+.recipes{
+    right: 0;
+    width: 100%;
+    margin: 40px;
+    justify-content: space-between;
+    flex-direction: row;
+    /*border: 5px solid rgb(142, 63, 252);*/
+}
+
+/*960px*/
+@media screen and (max-width: 960px) {
+    .contentt{
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .categoryBar{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .recipes{
+        margin-left: auto;
+        margin-right: auto;
+        
+        position: relative;
+        flex-direction: column;
+    }
+    .catStyle {
+      
+      width: auto;
+    }
+}
+@media screen and (max-width: 960px) {
+  
+  .catStyle {
+    width: auto;
+  }
+}
+
+.rightside {
+  right: 0;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  position: relative;
+  
+}
+
+.slider-container {
+  
+  margin-top: -60px;
+  height: 90%;
+  width: 200%;
+  padding: 30px 0;
+  
+}
+
+.slider-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+  min-width: 400px;
+}
+
+
+
+.swiper-navBtn {
+  color: #FCB13F;
+  transition: all 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+  color: #f69d17;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
+
+.swiper-button-next {
+  right: 3;
+  color: #f69d17;
+}
+
+.swiper-button-prev {
+  left: 3;
+  color: #f69d17;
+}
+
+.swiper-pagination-bullet {
+  background-color: #FCB13F;
+  opacity: 1;
+ 
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #f69d17;
+}
+
+@media (max-width: 768px) {
+  .slider-content {
+    margin: 0 10px;
+  }
+
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
+.search-btn{
+  border-radius: 1rem;
+  background: linear-gradient(90deg, hsl(46, 32%, 92%) 0%, rgb(252, 167, 63) 100%);
+}
+
+.leftSideAdd{
+  margin: 10px;
+  width: auto;
+  height: 700px;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.decRecBig{
+  box-sizing: border-box;
+  height: 200px;
+}
+.noFound{
+  margin-top: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  border-radius: 0;
+  min-width: 400px;
+  display: flex;
+}
+p{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1100px) {
+  .noFound{
+    border-radius: 0;
+    min-width: 200px;
+    
+  }
+  .rightside {
+    min-width: 600px;
+  }
+}

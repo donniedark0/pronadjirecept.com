@@ -1,0 +1,114 @@
+.profilestyle{
+    margin-top: 90px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 90px;
+    flex-direction: row;
+    position: relative;
+    display: flex;
+    
+}
+.profile{
+    display: block;
+    left: 0;
+    height: auto;
+    width: auto;
+    min-width: 580px;
+    align-items: center;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.profile-picture-big{
+    
+    margin: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 250px;
+    height: 250px;
+    
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    
+}
+.image-path{
+    width: 65%;
+    padding: 5px;
+}
+.profile-left{
+    position: relative;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    
+}
+.tekstsd{
+    margin-top: none;
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.back-btn{
+    text-align: end;
+    margin-left: 95%;
+}
+
+.stycon{
+    margin-top: 0;
+    
+}
+
+.add-recipe{
+    width: 110px;
+    height: 110px;
+    
+}
+.listrec{
+    height: 700px;
+    flex-direction: column;
+}
+.add-recipe{
+    border: 3px solid rgb(0, 0, 0);
+    position:absolute;
+    width:200px;
+    height:50px;
+    margin-left:-100px;
+    background: linear-gradient(90deg, hsl(46, 32%, 92%) 0%, rgb(252, 167, 63) 100%);
+    bottom:0px;
+    left:50%;
+}
+
+@media screen and (max-width: 960px) {
+
+    .profilestyle{
+        flex-direction: column;
+    }
+    .back-btn{
+        margin-left: 90%;
+    }
+    .showRecipe{
+        width: auto;
+        min-width:700px ;
+    }
+   
+}
+.showRecipe{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.close{
+   bottom: 200px;
+   margin-left: 150%;
+   vertical-align: top;
+
+}
+
+.comment{
+    border: 1px solid rgb(0, 0, 0);
+}
